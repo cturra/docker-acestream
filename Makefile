@@ -23,7 +23,7 @@ run:
 
 
 shell:
-	docker exec -ti $(CONTAINER_NAME) /bin/sh
+	docker exec -ti $(CONTAINER_NAME) /bin/bash
 
 
 start:	run
