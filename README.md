@@ -76,6 +76,15 @@ $> make stats
 ```
 
 
+### Status
+:warning: Requirement: container is [running](#run-or-start)
+
+Display the details about the running container.
+
+```
+$> make status
+```
+
 ## Connecting to Stream
 Once the container is running, connect to the network stream with a multimedia player like [VLC](http://www.videolan.org/) from the same or another
 computer on your network.

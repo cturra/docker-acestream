@@ -2,7 +2,7 @@ CONTAINER_NAME=acestream
 IMAGE=cturra/$(CONTAINER_NAME)
 # ---------
 
-.PHONY: build logs run shell start stats stop
+.PHONY: build logs run shell start stats status stop
 
 
 build:
@@ -31,6 +31,10 @@ start:	run
 
 stats:
 	docker stats $(CONTAINER_NAME)
+
+
+status:
+	docker ps --filter "name=$(CONTAINER_NAME)"
 
 
 stop:
