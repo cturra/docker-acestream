@@ -1,5 +1,5 @@
 # debian stretch (9)
-FROM debian:stretch-slim
+FROM debian:buster-slim
 
 # http://wiki.acestream.org/wiki/index.php/Download
 ENV ACESTREAM_VERSION 3.1.49
