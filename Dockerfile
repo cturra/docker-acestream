@@ -1,7 +1,6 @@
-# debian stretch (9)
 FROM debian:buster-slim
 
-# http://wiki.acestream.org/wiki/index.php/Download
+# https://docs.acestream.net/products/
 ENV ACESTREAM_VERSION 3.1.49
 
 # prepare dependencies for acestream
@@ -22,7 +21,7 @@ RUN apt-get -q update                          \
 
 # download and extract acestream
 RUN mkdir --parents /opt/acestream \
- && wget -qO- "http://acestream.org/downloads/linux/acestream_${ACESTREAM_VERSION}_debian_9.9_x86_64.tar.gz" |\
+ && wget -qO- "http://download.acestream.media/linux/acestream_${ACESTREAM_VERSION}_debian_9.9_x86_64.tar.gz" |\
     tar --extract --gzip --directory /opt/acestream
 
 # let docker know how to test container health
